@@ -1,0 +1,18 @@
+ion-content {
+  
+}
+
+ion-list{
+  background: transparent;
+  transform: translateY(10vh);
+  ion-list-header{
+   margin-bottom:  5vh;
+   letter-spacing: 3px;
+   ion-label{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+   }
+  }
+}
