@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'new-login-desgin',
     pathMatch: 'full'
+  },
+  {
+    path: 'new-login-desgin',
+    loadChildren: () => import('./new-login-desgin/new-login-desgin.module').then( m => m.NewLoginDesginPageModule)
   },
 ];
 

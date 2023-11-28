@@ -1,42 +1,43 @@
 // ion-content {
-  
+
 // }
 
-ion-list{
+ion-list {
   background: transparent;
   transform: translateY(10vh);
-  ion-list-header{
-   margin-bottom:  5vh;
-   letter-spacing: 3px;
-   ion-label{
-    font-weight: bold;
-    font-size: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-   }
+  ion-list-header {
+    margin-bottom: 5vh;
+    letter-spacing: 3px;
+    ion-label {
+      font-weight: bold;
+      font-size: 3rem;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    //   color: white;
+    }
   }
-  p{
+  p {
     font-size: 0.8rem;
     padding-top: 1vh;
-     ion-text{
+    ion-text {
       margin: 10px;
-     }
+    }
   }
 }
 
-.alignItems{
-  ion-icon , ion-note{
+.alignItems {
+  ion-icon,
+  ion-note {
     display: inline-block;
     vertical-align: middle;
   }
-  ion-icon{
+  ion-icon {
     margin-right: 1vw;
     font-size: 1.1rem;
   }
 }
 
-ion-footer{
-  ion-text{
+ion-footer {
+  ion-text {
     font-size: 0.8rem;
     margin: 10px;
   }

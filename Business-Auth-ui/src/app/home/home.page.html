@@ -7,7 +7,56 @@
     </ion-list-header>
 
     <ion-item  color="dark" class="ion-margin-vertical">
+      <ion-icon name="mail-outline" slot="start" color=""></ion-icon>
       <ion-input placeholder="Enter Email" type="text"></ion-input>
     </ion-item>
+
+    <ion-item  color="dark" class="ion-margin-vertical">
+      <ion-icon name="lock-closed-outline" slot="start" color=""></ion-icon>
+      <ion-input placeholder="Enter Password" type="password"></ion-input>
+    </ion-item>
+    <ion-row class="ion-margin-bottom">
+      <ion-col size="6" class="alignItems">
+        <ion-icon *ngIf="staySignedIn" name="checkmark-circle-outline" color="success" (click)="changeStatus(false)">
+        </ion-icon>
+        <ion-icon *ngIf="!staySignedIn" name="close-circle-outline" color="danger"  (click)="changeStatus(true)"></ion-icon>  
+       <ion-note>Keep me signed in</ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-button color="success" expand="block" size="large">Login</ion-button>
+    <ion-text class="ion-text-center">
+      <p>
+        <ion-note>Forget Password?</ion-note>
+        <ion-text color="success">Recover here</ion-text>
+      </p>
+    </ion-text>
   </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary" class="ion-text-center">
+     <ion-note>Don't havean account ?</ion-note>
+     <ion-text color="success">SignUp here</ion-text>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- product-selection.component.html -->
+<!-- <div class="container">
+  <div class="products">
+    <h2>Available Products</h2>
+    <div *ngFor="let product of availableProducts" class="product" (click)="addProduct(product)">
+      {{ product }}
+    </div>
+  </div>
+  <div class="selected-products">
+    <h2>Selected Products</h2>
+    <div *ngFor="let product of selectedProducts" class="product">
+      {{ product.name }} <span class="quantity">{{ product.quantity }}</span>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
